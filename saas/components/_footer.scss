@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-grey-bgc);
+}
+
+.footer-list {
+  @include font(14px, 1.71);
+
+  font-style: normal;
+
+  &__address {
+    color: var(--primary-white-color);
+  }
+
+  &__link {
+    @include font(14px, 1.14, 500, 0.02em);
+    display: block;
+
+    fill: var(--primary-text-color);
+    color: var(--footer-text-color);
+  }
+}
+
+.footer-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}

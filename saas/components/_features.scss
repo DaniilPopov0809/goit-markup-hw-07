@@ -1,0 +1,24 @@
+.features-list {
+  display: flex;
+
+  &__icon {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: var(--grey-bgc);
+  }
+
+  &__description {
+    line-height: 1.71;
+  }
+}
+
+.features-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
